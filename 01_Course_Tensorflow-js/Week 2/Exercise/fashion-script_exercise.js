@@ -20,7 +20,7 @@ function getModel() {
         filters: 8, 
         activation: 'relu'}
         
-    ))
+    ));
     model.add(tf.layers.maxPooling2d({poolSize: [2, 2]}));
 	model.add(tf.layers.conv2d({filters: 16, kernelSize: 3, activation: 'relu'}));
 	model.add(tf.layers.maxPooling2d({poolSize: [2, 2]}));
